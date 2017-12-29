@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Template Form</title>
+
+    <link rel="stylesheet" href="https://redirector.eservice.emarsys.net/ui/latest/css/app.css">
+    <script src="https://redirector.eservice.emarsys.net/ui/latest/js/app.js" charset="UTF-8"></script>
+
+    <style>
+        body { padding-top: 20px; }
+    </style>
+    <script>
+        window.PE_CONFIG = { editorUrl: 'http://test.io' };
+    </script>
+</head>
+<body>
+
+<div class="e-container">
+    <div class="e-header">
+        <h1>Template Form</h1>
+    </div>
+
+    <div class="e-field e-field-fixwidth">
+        <label for="template_first" class="e-field__label">
+            First template
+        </label>
+        <div class="e-field__postfix">
+            <span class="e-field__postfix__cell">
+                <input id="template_first" type="text" class="e-input">
+            </span>
+            <span class="e-field__postfix__cell e-field__postfix__cell-short e-field__postfix__cell-shortsticky">
+                <pe-opener id="template_first"></pe-opener>
+            </span>
+        </div>
+    </div>
+</div>
+
+<script src="vendor.bundle.js"></script>
+<script src="main.bundle.js"></script>
+
+</body>
+</html>
