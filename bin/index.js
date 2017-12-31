@@ -39,4 +39,7 @@ switch (task) {
   case 'merge':
     merge((new Config()).calculate({ env: 'production' }));
     break;
+  default:
+    console.log(`Unsupported task ${task}.`);
+    console.log('It can be one of the following: start,lint,test,test:watch,build,deploy:staging,deploy:production,merge');
 }
