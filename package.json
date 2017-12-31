@@ -1,12 +1,12 @@
 {
-  "name": "packster",
-  "version": "1.0.0",
+  "name": "@emartech/packster",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node ./bin/index.js start",
     "lint": "node ./bin/index.js lint",
-    "test": "mocha setup-tests.spec.js lib --recursive && node ./bin/index.js test",
+    "test": "npm run mocha && node ./bin/index.js test",
+    "mocha": "mocha lib --recursive",
     "test:watch": "node ./bin/index.js test:watch",
     "build": "node ./bin/index.js build",
     "deploy:staging": "node ./bin/index.js deploy:staging",
@@ -55,9 +55,13 @@
   },
   "devDependencies": {
     "chai": "4.1.2",
+    "deep-extend": "0.5.0",
     "mocha": "4.1.0",
     "semantic-release": "11.0.2",
     "sinon": "4.1.3",
     "sinon-chai": "2.14.0"
+  },
+  "engines": {
+    "node": "8.9.0"
   }
 }
