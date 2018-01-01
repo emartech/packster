@@ -4,6 +4,8 @@ import { ConnectorService } from './app/services/connector/connector.service';
 import { DialogOpenerElement } from './app/web-components/dialog-opener/dialog-opener.element';
 import { DialogFactory } from './app/factories/dialog/dialog.factory';
 
+require('./external.css');
+
 const dialog = new DialogFactory(document.body, getBrowserConfig().editorUrl);
 dialog.append();
 

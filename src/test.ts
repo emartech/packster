@@ -1,2 +1,2 @@
-const testContext = (<any>require).context('./', true, /\.spec\.ts/);
+const testContext = (<any>require).context('./app', true, /\.spec\.ts/);
 testContext.keys().forEach(testContext);

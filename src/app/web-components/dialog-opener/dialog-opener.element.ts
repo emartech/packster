@@ -1,5 +1,9 @@
 import { ConnectorService } from '../../services/connector/connector.service';
 const template = require('./dialog-opener.template.html');
+const style = require('./dialog-opener.style.css');
+
+console.log('html template', template);
+console.log('css style', style);
 
 export class DialogOpenerElement extends HTMLElement {
   public connector: ConnectorService;
