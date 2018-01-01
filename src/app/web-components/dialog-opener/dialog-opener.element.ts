@@ -1,11 +1,13 @@
 import { ConnectorService } from '../../services/connector/connector.service';
 const htmlTemplate = require('./dialog-opener.template.html');
 const pugTemplate = require('./dialog-opener.template.pug');
-const style = require('./dialog-opener.style.css');
+const cssStyle = require('./dialog-opener.style.css');
+const sassStyle = require('./dialog-opener.style.sass');
 
 console.log('html template', htmlTemplate);
 console.log('pug template', pugTemplate);
-console.log('css style', style);
+console.log('css style', cssStyle);
+console.log('sass style', sassStyle);
 
 export class DialogOpenerElement extends HTMLElement {
   public connector: ConnectorService;
