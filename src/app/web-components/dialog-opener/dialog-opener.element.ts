@@ -3,11 +3,13 @@ const htmlTemplate = require('./dialog-opener.template.html');
 const pugTemplate = require('./dialog-opener.template.pug');
 const cssStyle = require('./dialog-opener.style.css');
 const sassStyle = require('./dialog-opener.style.sass');
+const stylusStyle = require('./dialog-opener.style.styl');
 
 console.log('html template', htmlTemplate);
 console.log('pug template', pugTemplate);
 console.log('css style', cssStyle);
 console.log('sass style', sassStyle);
+console.log('stylus style', stylusStyle);
 
 export class DialogOpenerElement extends HTMLElement {
   public connector: ConnectorService;
