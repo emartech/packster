@@ -4,7 +4,7 @@ const argv = require('minimist')(process.argv.slice(2));
 
 const Config = require('../lib/config');
 const start = require('../lib/bin/start');
-const lint = require('../lib/bin/lint');
+const lint = require('../lib/bin/tslint');
 const test = require('../lib/bin/test');
 const build = require('../lib/bin/build');
 const deploy = require('../lib/bin/deploy');
